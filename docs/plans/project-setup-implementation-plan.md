@@ -122,8 +122,8 @@
 
 - [x] Configure Playwright browsers (`npx playwright install`) - Browsers installed with deps
 - [x] Create basic Playwright test structure (`e2e/` directory) - ✅ Created `e2e/app.spec.ts`
-- [ ] Create basic xUnit test structure in `backend.Tests`
-- [ ] Create basic Testcontainers integration test example
+- [x] Create basic xUnit test structure in `backend.Tests` - ✅ Test structure created (Controllers/, Integration/ folders)
+- [x] Create basic Testcontainers integration test example - ✅ DatabaseConnectionTests created with Testcontainers.PostgreSql
 - [x] Verify Playwright test runner works - ✅ Tests pass (2 tests, chromium project)
 
 ### Tests
