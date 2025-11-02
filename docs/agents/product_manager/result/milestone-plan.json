@@ -1,0 +1,69 @@
+{
+  "milestones": [
+    {
+      "day": 1,
+      "issues": [
+        {
+          "title": "Home Page",
+          "body": "See refined user story in docs/agents/product_manager/result/refined-issue-1.md",
+          "labels": ["enhancement", "user-story"],
+          "estimate": null,
+          "rationale": "Foundational entry point for the application; must be completed first to establish navigation and layout structure. Refined with complete mobile (Daily Digest) and desktop (Weekly Meal Plan) specifications."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "issues": [
+        {
+          "title": "Recipe discovery",
+          "body": "### **US : Découverte et Filtrage de Recettes pour le Planificateur de Repas (Version Mobile/Desktop)**\n\n#### **Description**\nPermettre aux utilisateurs de découvrir, filtrer et parcourir une liste de recettes variées et adaptées à leurs préférences alimentaires (rapide, végétarien, sans gluten, etc.) ou à des moments spécifiques de la journée (petit-déjeuner, déjeuner, dîner). Cette fonctionnalité vise à simplifier la recherche et la sélection de repas, en offrant une expérience intuitive et personnalisable. La valeur ajoutée est d'aider les utilisateurs à trouver rapidement des idées de recettes adaptées à leurs besoins, contraintes et envies.\n\n---\n\n### **Exigences Visuelles**\n\nDesktop : \n<img width=\"1600\" height=\"1154\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/ada7b131-2bc6-44e2-b696-f34dff8cb63b\" />\n\nMobile : \n<img width=\"437\" height=\"918\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/30e062c7-a80d-4f54-9288-0bbc6a92b25e\" />\n\n#### **1. Barre de Recherche et Filtres**\n- **Barre de recherche** :\n  - Fond blanc, bordure légère en gris clair (#E0E0E0).\n  - Icône de loupe à gauche, en gris (#757575).\n  - Texte d'exemple : *\"Search for recipes\"* en gris clair (#9E9E9E).\n- **Filtres** :\n  - Boutons rectangulaires avec bordures arrondies (rayon de 20px).\n  - Fond orange (#FF8C00) pour le filtre sélectionné (\"Quick & Easy\"), fond gris très clair (#F8F8F8) pour les autres.\n  - Texte en orange (#FF8C00) pour le filtre sélectionné, en gris foncé (#424242) pour les autres.\n  - Options de filtres : Quick & Easy, Vegetarian, Gluten-Free, Low Carb, Family-Friendly, Desserts, Breakfast, Lunch, Dinner.\n  - Défilement horizontal pour les filtres si nécessaire.\n\n#### **2. Liste des Recettes**\n- **Titre de section** :\n  - *\"All Recipes\"* en noir (#000000), police **Title Large**, taille 24px, gras.\n- **Cartes de recettes** :\n  - Fond blanc pour chaque carte, avec une bordure subtile en gris clair (#E0E0E0).\n  - Image de la recette : carrée, bordure arrondie (rayon de 8px), taille fixe (80px x 80px).\n  - Titre de la recette en noir (#000000), police **Subtitle Bold**, taille 16px.\n  - Description en gris foncé (#616161), police **Body Regular**, taille 14px.\n  - Espacement vertical de 12px entre chaque carte.\n\n---\n\n### **Composants Structurels**\n\n#### **1. Barre de Recherche et Filtres**\n- Positionnée en haut de l'écran, sous l'en-tête.\n- Largeur : 100% de la largeur de l'écran.\n- Les filtres sont alignés horizontalement et défilent si nécessaire.\n\n#### **2. Liste des Recettes**\n- Disposition en liste verticale (1 colonne pour mobile et desktop).\n- Chaque carte occupe toute la largeur de l'écran, avec un padding horizontal de 16px.\n- Image à gauche, titre et description à droite, alignés verticalement au centre.\n\n---\n\n### **Exigences de Données**\n- Liste des recettes (titre, image, description, temps de préparation, tags).\n- État des filtres sélectionnés par l'utilisateur.\n- Résultats de recherche et de filtrage en temps réel.\n\n---\n### **Fonctionnalités**\n\n#### **1. Recherche de Recettes**\n- L'utilisateur peut saisir un terme dans la barre de recherche pour filtrer les recettes.\n- Les résultats s'affichent en temps réel ou après validation.\n\n#### **2. Filtres Personnalisables**\n- L'utilisateur peut sélectionner un ou plusieurs filtres (ex. : \"Vegetarian\" + \"Dinner\").\n- Les recettes affichées sont mises à jour dynamiquement en fonction des filtres appliqués.\n\n#### **3. Affichage des Recettes**\n- Chaque carte affiche : image, titre, description.\n- L'utilisateur peut cliquer sur une carte pour accéder aux détails complets de la recette.\n\n---\n### **Considérations de Performance**\n- Chargement rapide des images (lazy loading, mise en cache).\n- Temps de réponse < 500ms pour l'application des filtres et la recherche.\n- Optimisation pour les connexions mobiles et desktop.\n\n---\n### **Exigences d'Accessibilité**\n- Texte alternatif pour toutes les images de recettes.\n- Contraste suffisant pour le texte et les boutons (ratio minimum 4.5:1).\n- Navigation au clavier pour les filtres et les cartes de recettes.\n- Labels ARIA pour les éléments interactifs.\n\n---\n### **Critères d'Acceptation**\n- La barre de recherche et les filtres s'affichent correctement en haut de l'écran.\n- Les cartes de recettes respectent le design visuel décrit (images, titres, descriptions).\n- Les filtres sont fonctionnels : la sélection d'un filtre met à jour instantanément la liste des recettes.\n- L'interface est responsive et s'adapte aux tailles d'écran mobile et desktop.\n- Message clair si aucune recette ne correspond aux filtres appliqués (*\"No recipes found. Try adjusting your filters.\"*).\n\n---\n### **Cas Particuliers**\n- Gestion des noms de recettes ou descriptions longues (troncature avec \"...\" si nécessaire).\n- Affichage d'un indicateur de chargement pendant la recherche ou le filtrage.\n- Gestion des erreurs de chargement des images (icône de remplacement).\n\n---\n### **Dépendances**\n- **Design System** : Couleurs, polices, composants (cartes, boutons, barre de recherche).\n- **API Backend** : Récupération des recettes, application des filtres et recherche.\n- **Base de données** : Stockage des recettes, images et métadonnées (tags, temps de préparation, type de repas).",
+          "labels": ["enhancement", "user-story"],
+          "estimate": null,
+          "rationale": "Core feature enabling users to discover recipes; prerequisite for meal planning and shopping list generation"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "issues": [
+        {
+          "title": "Shopping List",
+          "body": "### **US : Afficher et gérer la liste de courses (Shopping List)**\n#### **Description**\nPermettre à l'utilisateur de visualiser, cocher/décocher et gérer les articles de sa liste de courses, organisés par catégories (Produce, Dairy, Meat, Pantry). L'objectif est de simplifier la préparation des repas en fournissant une liste claire et interactive, synchronisée avec le plan de repas de l'utilisateur.\n\n---\n\n### **Exigences Visuelles**\n\nDeskptop : \n\n<img width=\"1575\" height=\"1600\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/546ef321-1dc7-42f2-89bd-9220dfdea31c\" />\n\nMobile : \n\n<img width=\"422\" height=\"842\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/a4fcb65a-0820-4f41-8ad8-a3186118c207\" />\n\n#### **1. En-tête**\n- **Barre d'en-tête** :\n  - Logo **\"MealPrep\"** (icône orange en forme de panier ou de fourchette/couteau).\n  - Titre **\"Shopping List\"** en noir, police **Title Large**.\n  - Onglets de navigation : **\"My Plan\"**, **\"Recipes\"**, **\"Shopping List\"** (en surbrillance orange pour indiquer la section active).\n  - Icône de notification et photo de profil en haut à droite.\n  - Fond blanc pour l'en-tête.\n\n#### **2. Boutons d'action**\n- **Bouton \"Add Item\"** :\n  - Fond orange (#FF8C00), texte blanc, bordure arrondie.\n  - Positionné en haut à droite sous l'en-tête.\n- **Bouton \"Print\"** :\n  - Fond gris clair, texte noir, bordure arrondie.\n  - Positionné à côté du bouton \"Add Item\".\n\n#### **3. Sections par catégorie**\n- **Titres de section** :\n  - Texte en noir, police **Subtitle Bold**, fond blanc.\n  - Exemples : **\"Produce\"**, **\"Dairy\"**, **\"Meat\"**, **\"Pantry\"**.\n- **Lignes de séparation** :\n  - Ligne grise claire entre chaque catégorie.\n\n#### **4. Liste des articles**\n- **Articles** :\n  - Texte en noir, police **Body Regular**.\n  - Case à cocher à gauche de chaque article (orange quand cochée, grise sinon).\n  - Quantité et nom de l'article alignés à gauche.\n  - Exemple : **\"✓ 1 head Lettuce\"**, **\"2 lbs Apples\"**.\n\n---\n\n### **Composants Structurels**\n#### **1. En-tête**\n- Fixe en haut de l'écran.\n- Logo et titre alignés à gauche, onglets centrés, icônes à droite.\n\n#### **2. Boutons d'action**\n- Alignés horizontalement sous l'en-tête, à droite.\n\n#### **3. Sections par catégorie**\n- Organisées verticalement dans l'ordre : **Produce**, **Dairy**, **Meat**, **Pantry**.\n- Chaque section contient une liste d'articles cochables.\n\n---\n\n### **Exigences de Données**\n- Liste des articles par catégorie, avec :\n  - Nom de l'article.\n  - Quantité.\n  - État (coché/décoché).\n- Synchronisation avec le plan de repas pour mettre à jour automatiquement la liste.\n\n---\n\n### **Fonctionnalités**\n#### **1. Cocher/Décocher un article**\n- L'utilisateur peut cocher ou décocher un article en cliquant sur la case.\n- La case passe en orange quand cochée.\n\n#### **2. Ajouter un article**\n- Le bouton **\"Add Item\"** ouvre un champ de saisie pour ajouter un nouvel article (nom + quantité + catégorie).\n- L'article est ajouté à la liste après validation.\n\n#### **3. Imprimer la liste**\n- Le bouton **\"Print\"** génère une version imprimable de la liste (format PDF ou impression directe).\n\n#### **4. Synchronisation automatique**\n- La liste se met à jour automatiquement en fonction des recettes sélectionnées dans **\"My Plan\"**.\n\n---\n\n### **Considérations de Performance**\n- Chargement instantané de la liste.\n- Mise à jour en temps réel des cases cochées/décochées.\n- Optimisation pour éviter les latences lors de l'ajout ou de la suppression d'articles.\n\n---\n\n### **Exigences d'Accessibilité**\n- Texte alternatif pour les icônes.\n- Contraste suffisant entre le texte, les cases à cocher et le fond.\n- Navigation au clavier pour cocher/décocher les articles et utiliser les boutons.\n\n---\n\n### **Critères d'Acceptation**\n- L'en-tête s'affiche avec le logo, le titre et les onglets de navigation.\n- Les boutons **\"Add Item\"** et **\"Print\"** sont fonctionnels et visibles.\n- Les articles sont organisés par catégorie avec des cases à cocher interactives.\n- Les articles cochés sont visibles en orange.\n- La liste se met à jour automatiquement en fonction du plan de repas.\n\n---\n### **Cas Particuliers**\n- Gestion des articles sans quantité spécifiée (ex. : \"1 jar Jelly\" vs \"Jelly\").\n- Affichage d'une liste vide si aucun article n'est nécessaire pour le plan de repas actuel.\n- Message de confirmation avant l'impression ou l'ajout d'un article en double.\n\n---\n### **Dépendances**\n- **Design System** : Couleurs, polices, composants (boutons, cases à cocher).\n- **Backend** : API pour synchroniser la liste avec le plan de repas et sauvegarder les modifications.\n- **Base de données** : Stockage des articles, catégories et états (coché/décoché).\n\n---",
+          "labels": ["enhancement", "user-story"],
+          "estimate": null,
+          "rationale": "Depends on recipes/meal plan existing; logical next step after users can discover recipes"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "issues": [
+        {
+          "title": "Settings",
+          "body": "See refined user story in docs/agents/product_manager/result/refined-issue-2.md",
+          "labels": ["enhancement", "user-story"],
+          "estimate": null,
+          "rationale": "Configuration and preferences; less critical for MVP, can be implemented after core features. Refined with complete mobile and desktop specifications for dietary preferences, allergies, and meal planning settings."
+        }
+      ]
+    }
+  ],
+  "needs_refinement": [],
+  "refined_issues": [
+    {
+      "issue_number": 1,
+      "title": "Home Page",
+      "status": "refined",
+      "refined_file": "docs/agents/product_manager/result/refined-issue-1.md",
+      "notes": "Consolidated mobile (Daily Digest) and desktop (Weekly Meal Plan) specifications. May need splitting if exceeds 1 day - see notes in refined file."
+    },
+    {
+      "issue_number": 2,
+      "title": "Settings",
+      "status": "refined",
+      "refined_file": "docs/agents/product_manager/result/refined-issue-2.md",
+      "notes": "Consolidated mobile and desktop specifications for meal plan settings. May need splitting if exceeds 1 day - see notes in refined file."
+    }
+  ]
+}
