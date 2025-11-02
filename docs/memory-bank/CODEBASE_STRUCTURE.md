@@ -9,7 +9,9 @@
   - @README.md: project entry
   - @docker-compose.yml: PostgreSQL database container configuration
 - How modules map to files: use `@aidd/prompts/` for prompt templates; docs live under `@docs/`.
-- Where to find tests: @backend.Tests/ for backend tests, @frontend/ for frontend tests (Angular test scripts in @frontend/package.json).
+- Where to find tests: 
+  - Backend: @backend.Tests/ (unit tests in Controllers/, integration tests in Integration/)
+  - Frontend: @frontend/e2e/ for Playwright E2E tests, @frontend/src/app/*.spec.ts for unit tests
 - Database: PostgreSQL 16 configured in @docker-compose.yml (port 5432, database: mealplanner_dev)
 - Frontend: Angular 20 standalone components, Tailwind CSS, Playwright E2E tests
 - Backend: ASP.NET Core 8 Web API, EF Core, CORS configured for Angular app
