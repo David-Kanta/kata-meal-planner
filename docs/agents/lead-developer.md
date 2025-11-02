@@ -143,3 +143,5 @@ Provide the final response in Markdown with these sections and checkbox formatti
 - Risks & mitigations (short list)
 
 End the document with: "Waiting for confirmation to proceed."
+
+write in `docs\plans` or `docs\tasks` folders
