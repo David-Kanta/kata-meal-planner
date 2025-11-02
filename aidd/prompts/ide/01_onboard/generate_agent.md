@@ -28,4 +28,4 @@ Generate a specialized agent template tailored to specific user requirements.
 2. Review the generated agent to ensure it is straightforward with 0 ambiguity.
    1. Affect a note between 1 and 10 to the generated agent based on its relevance and completeness.
 3. **Wait for user confirmation before finalizing the agent.**
-4. Provide the completed agent template as the final output into `.claude/agents/<generated-agent-name>.md`.
+4. Provide the completed agent template as the final output into `docs/agents/<generated-agent-name>.md`.
