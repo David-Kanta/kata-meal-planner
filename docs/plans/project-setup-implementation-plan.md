@@ -75,7 +75,7 @@
 
 - [x] Define frontend project structure (Angular standalone components) - ✅ Implemented
 - [x] Define backend project structure (controllers, DbContext, models) - ✅ Implemented (controllers and health endpoint created)
-- [ ] Design database schema approach (EF Core migrations)
+- [x] Design database schema approach (EF Core migrations) - ✅ Implemented (MealPlannerDbContext created, migrations strategy documented)
 - [ ] Design API contract structure (REST endpoints)
 - [x] Define environment configuration approach - ✅ Frontend environment.ts created
 
@@ -108,7 +108,7 @@
 - [x] Create `appsettings.Development.json` with connection string
 - [x] Configure CORS in `Program.cs` for Angular app
 - [x] Create basic health check endpoint (`/api/health`)
-- [ ] Set up DbContext (empty for now, ready for migrations)
+- [x] Set up DbContext (empty for now, ready for migrations) - ✅ MealPlannerDbContext created and configured in Program.cs
 - [x] Add .NET .gitignore and remove bin/obj from tracking
 
 #### Database (2h)
@@ -177,7 +177,7 @@
 
 1. Configure Tailwind CSS in frontend (1h) - ✅ Completed
 2. Configure CORS and basic endpoints in backend (1h) - ✅ Completed
-3. Set up EF Core DbContext structure (1h)
+3. Set up EF Core DbContext structure (1h) - ✅ Completed (MealPlannerDbContext created, configured, and ready for migrations)
 
 ### P2 - Testing Setup (3h)
 
