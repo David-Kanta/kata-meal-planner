@@ -29,10 +29,13 @@ export default defineConfig({
       timeout: 120 * 1000,
     },
     {
-      command: 'cd ../backend && dotnet run',
+      command: process.platform === 'win32' 
+        ? 'dotnet run --project ../backend/backend.csproj'
+        : 'cd ../backend && dotnet run',
       url: 'http://localhost:5000/api/health',
       reuseExistingServer: !process.env.CI,
       timeout: 120 * 1000,
+      cwd: process.cwd(),
     },
   ],
 });
