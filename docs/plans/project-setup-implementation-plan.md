@@ -58,7 +58,7 @@
 - [x] Backend unit tests run successfully (`dotnet test`) - ✅ Tests pass (unit tests for health endpoint)
 - [x] Integration tests with Testcontainers run successfully - ✅ Integration tests pass (database connection tests with Testcontainers)
 - [x] Playwright E2E tests configured and can run - ✅ Basic tests created and passing
-- [ ] Full stack integration verified (frontend can call backend API)
+- [x] Full stack integration verified (frontend can call backend API) - ✅ E2E test passes, both servers start correctly
 
 ## Implementation Plan
 
@@ -132,7 +132,7 @@
 - [x] Unit test: Backend health endpoint returns 200 OK - ✅ HealthControllerTests created and passing
 - [x] Integration test: Backend connects to PostgreSQL via Testcontainers - ✅ DatabaseConnectionTests created and passing
 - [x] E2E test: Frontend loads and displays basic content - ✅ Created and passing
-- [ ] E2E test: Frontend can call backend health endpoint
+- [x] E2E test: Frontend can call backend health endpoint - ✅ Test created and passing (calls /api/health endpoint)
 
 ### Review
 
@@ -214,4 +214,4 @@
 
 ---
 
-**Status**: Frontend setup completed and verified (dev server starts successfully on port 4200). Backend setup completed (project created, packages installed, CORS configured, health endpoint created, test project ready). **Phase 1 Infrastructure completed**: Docker Desktop verified, Docker Compose available (v2.40.3), ports 4200/5000/5432 available, PostgreSQL container started and healthy, Docker volume created. Ready for Phase 2 (Backend Database setup).
+**Status**: Frontend setup completed and verified (dev server starts successfully on port 4200). Backend setup completed (project created, packages installed, CORS configured, health endpoint created, test project ready). **Phase 1 Infrastructure completed**: Docker Desktop verified, Docker Compose available (v2.40.3), ports 4200/5000/5432 available, PostgreSQL container started and healthy, Docker volume created. **Phase 4 Full Stack Integration completed**: E2E test created for backend health endpoint call, Playwright configured to start both frontend and backend servers, full stack integration verified (all E2E tests passing), verification steps from SETUP_GUIDE.md executed successfully.
