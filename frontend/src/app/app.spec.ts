@@ -27,7 +27,7 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const logo = compiled.querySelector('.angular-logo');
     expect(logo).toBeTruthy();
-    expect(logo?.tagName).toBe('SVG');
+    expect(logo?.tagName.toLowerCase()).toBe('svg');
   });
 
   it('should render main content container', () => {
