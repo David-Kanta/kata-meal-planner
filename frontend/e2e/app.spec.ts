@@ -34,4 +34,26 @@ test.describe('App', () => {
     await page.setViewportSize({ width: 375, height: 667 });
     await expect(appRoot).toBeVisible();
   });
+
+  test('should call backend health endpoint', async ({ page }) => {
+    // Navigate to the home page
+    await page.goto('/');
+
+    // Call the backend health endpoint using fetch API
+    const response = await page.evaluate(async () => {
+      const res = await fetch('http://localhost:5000/api/health');
+      return {
+        status: res.status,
+        statusText: res.statusText,
+        body: await res.json(),
+      };
+    });
+
+    // Verify the response
+    expect(response.status).toBe(200);
+    expect(response.statusText).toBe('OK');
+    expect(response.body).toHaveProperty('status');
+    expect(response.body.status).toBe('healthy');
+    expect(response.body).toHaveProperty('timestamp');
+  });
 });
