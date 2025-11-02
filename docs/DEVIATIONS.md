@@ -80,4 +80,3 @@ All deviations are either:
 - **No negative impact** on functionality or setup process
 
 The setup process remains functional and follows the same general flow as SETUP_GUIDE.md.
-

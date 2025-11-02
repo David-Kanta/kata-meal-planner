@@ -79,4 +79,3 @@ public class DatabaseConnectionFromBackendTests : IDisposable
         Assert.True(databaseExists, "Database should exist and be accessible");
     }
 }
-
