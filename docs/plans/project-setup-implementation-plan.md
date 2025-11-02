@@ -115,7 +115,7 @@
 
 - [x] Start PostgreSQL container (`docker compose up -d postgres`) - ✅ Container started
 - [x] Verify container health (`docker ps`) - ✅ Container healthy and accepting connections
-- [ ] Test database connection from backend
+- [x] Test database connection from backend - ✅ DatabaseConnectionFromBackendTests created and passing (connects to PostgreSQL container)
 - [x] Verify Docker volume creation - ✅ Volume created
 
 #### Testing Infrastructure (3-4h)
@@ -128,7 +128,7 @@
 
 ### Tests
 
-- [ ] Unit test: Angular component renders
+- [x] Unit test: Angular component renders - ✅ App component unit tests created and passing (6 tests covering rendering)
 - [x] Unit test: Backend health endpoint returns 200 OK - ✅ HealthControllerTests created and passing
 - [x] Integration test: Backend connects to PostgreSQL via Testcontainers - ✅ DatabaseConnectionTests created and passing
 - [x] E2E test: Frontend loads and displays basic content - ✅ Created and passing
