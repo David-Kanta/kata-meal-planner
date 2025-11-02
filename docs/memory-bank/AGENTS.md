@@ -7,6 +7,8 @@ Important context:
 - Current date: !`date +%Y-%m-%d`
 - Timezone: !`date +%Z`
 
+Github repository url : https://github.com/Conrardy/kata-meal-planner/
+
 - @docs/memory-bank/PROJECT_BRIEF.md — short project purpose, scope and where to look for configs.
 - @docs/memory-bank/DEPLOYMENT.md — deployment notes and current status.
 - @docs/memory-bank/STACK.md — technology stack summary (generic).
