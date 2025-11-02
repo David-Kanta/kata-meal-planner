@@ -1,5 +1,8 @@
 # Recipe Discovery - User Stories
 
+![Desktop View](images/issues/issue-4-desktop.png)
+![Mobile View](images/issues/issue-4-mobile.png)
+
 ## "Access Recipe Discovery from Navigation"
 
 **As a** meal planner user  

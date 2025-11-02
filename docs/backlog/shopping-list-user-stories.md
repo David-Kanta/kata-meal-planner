@@ -1,5 +1,8 @@
 # Shopping List - User Stories
 
+![Desktop View](images/issues/issue-3-desktop.png)
+![Mobile View](images/issues/issue-3-mobile.png)
+
 ## "View My Shopping List Organized by Category"
 
 **As a** meal planner user  

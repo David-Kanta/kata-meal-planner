@@ -1,5 +1,8 @@
 # Settings - User Stories
 
+![Desktop View](images/issues/issue-2-desktop.png)
+![Mobile View](images/issues/issue-2-mobile.png)
+
 ## "Access Settings from Navigation"
 
 **As a** meal planner user  

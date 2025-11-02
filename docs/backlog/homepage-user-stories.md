@@ -1,5 +1,8 @@
 # Home Page - User Stories
 
+![Desktop View](images/issues/issue-1-desktop.png)
+![Mobile View](images/issues/issue-1-mobile.png)
+
 ## "View Today's Meal Plan (Mobile)"
 
 **As a** meal planner user  
