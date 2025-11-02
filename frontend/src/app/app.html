@@ -183,6 +183,30 @@
 </style>
 
 <main class="main">
+  <!-- Backend Health Status -->
+  <div class="health-status-container" style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+    @if (loading) {
+      <div class="health-loading" style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 0.5rem; padding: 0.75rem 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <p style="margin: 0; color: #856404; font-size: 0.875rem;">Checking backend health...</p>
+      </div>
+    }
+    @if (error) {
+      <div class="health-error" style="background: #f8d7da; border: 1px solid #dc3545; border-radius: 0.5rem; padding: 0.75rem 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <p style="margin: 0; color: #721c24; font-size: 0.875rem; font-weight: 500;">Unable to connect to backend</p>
+        <p style="margin: 0.25rem 0 0 0; color: #721c24; font-size: 0.75rem;">{{ error }}</p>
+      </div>
+    }
+    @if (healthStatus && !loading && !error) {
+      <div class="health-success" style="background: #d4edda; border: 1px solid #28a745; border-radius: 0.5rem; padding: 0.75rem 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="display: inline-block; width: 0.5rem; height: 0.5rem; background: #28a745; border-radius: 50%;"></span>
+          <p style="margin: 0; color: #155724; font-size: 0.875rem; font-weight: 500;">Status: {{ healthStatus.status }}</p>
+        </div>
+        <p style="margin: 0.25rem 0 0 1.5rem; color: #155724; font-size: 0.75rem;">{{ formatTimestamp(healthStatus.timestamp) }}</p>
+      </div>
+    }
+  </div>
+
   <div class="content">
     <div class="left-side">
       <svg
