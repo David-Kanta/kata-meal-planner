@@ -1,0 +1,42 @@
+---
+name: new_issue
+description: Create GitHub issues with interactive template filling
+argument-hint: "Describe the problem you want to create an issue for"
+allowed-tools: Bash(date), gh
+mode: agent
+---
+
+# Issue Generator Prompt
+
+## Goal
+
+Create GitHub issue based on the problem: $ARGUMENTS
+
+## Context
+
+### Template to fill
+
+```markdown
+@aidd/templates/.github/issue_template.md
+```
+
+## Rules
+
+- Use `gh` commands if GitHub related, including `--label`, `--project`, `--milestone` if applicable.
+- Be thorough and concise in the issue description, focus on clarity, small sentences.
+
+## Process steps
+
+1. Gather detailed problem description + Add technical implementation details
+2. Challenge the user to provide more details about the issue
+3. Web Search official documentation to support the issue
+4. Use our template to fill in the issue
+5. Validate complete issue with user displaying:
+   1. Title
+   2. Content from template
+   3. Labels
+   4. Type
+   5. Projets
+   6. Milestones
+6. **WAIT FOR USER APPROVAL**
+7. Provide link to issue
