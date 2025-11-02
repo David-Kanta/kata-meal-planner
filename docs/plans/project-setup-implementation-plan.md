@@ -76,7 +76,7 @@
 - [x] Define frontend project structure (Angular standalone components) - ✅ Implemented
 - [x] Define backend project structure (controllers, DbContext, models) - ✅ Implemented (controllers and health endpoint created)
 - [x] Design database schema approach (EF Core migrations) - ✅ Implemented (MealPlannerDbContext created, migrations strategy documented)
-- [ ] Design API contract structure (REST endpoints)
+- [x] Design API contract structure (REST endpoints) - ✅ Implemented (API_DESIGN.md created with complete REST endpoint structure)
 - [x] Define environment configuration approach - ✅ Frontend environment.ts created
 
 ### Implementation
