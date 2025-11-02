@@ -7,7 +7,7 @@
 - **Framework**: Angular 20 → @frontend/package.json
 - **UI Library**: Tailwind CSS 3.4 - Custom design system with orange theme (#FF8C00, #FFD700)
 - **Routing**: Angular Router - Standalone components with `@frontend/src/app/app.routes.ts`
-- **Data Fetching**: HTTP Client (to be implemented) - Angular HttpClient for API calls
+- **Data Fetching**: Angular HttpClient - Configured in @frontend/src/app/app.config.ts with `provideHttpClient()`, services in @frontend/src/app/services/
 - **Form Handling**: Angular Reactive Forms - `@angular/forms` package available
 - **Validation**: Angular validators - Built-in form validation
 - **State Management**: Component-level state - No global state management yet
@@ -42,6 +42,8 @@ kata-meal-planner/
 ├── frontend/           # Angular 20 frontend
 │   ├── src/
 │   │   ├── app/        # Standalone components
+│   │   │   ├── services/  # HTTP services
+│   │   │   └── models/   # TypeScript interfaces/models
 │   │   └── environments/  # Environment config
 │   └── package.json
 ├── backend/            # ASP.NET Core 8 API

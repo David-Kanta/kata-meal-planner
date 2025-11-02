@@ -13,6 +13,6 @@
   - Backend: @backend.Tests/ (unit tests in Controllers/, integration tests in Integration/)
   - Frontend: @frontend/e2e/ for Playwright E2E tests, @frontend/src/app/*.spec.ts for unit tests
 - Database: PostgreSQL 16 configured in @docker-compose.yml (port 5432, database: mealplanner_dev)
-- Frontend: Angular 20 standalone components, Tailwind CSS, Playwright E2E tests
+- Frontend: Angular 20 standalone components, Tailwind CSS, Playwright E2E tests, HTTP services in @frontend/src/app/services/, models in @frontend/src/app/models/
 - Backend: ASP.NET Core 8 Web API, EF Core, CORS configured for Angular app
 - Quick navigation: update this file when moving major folders.
