@@ -55,8 +55,8 @@
 ### Verification
 
 - [ ] Frontend unit tests run successfully (`npm test`)
-- [x] Backend unit tests run successfully (`dotnet test`) - ✅ Tests pass (basic xUnit test project working)
-- [ ] Integration tests with Testcontainers run successfully
+- [x] Backend unit tests run successfully (`dotnet test`) - ✅ Tests pass (unit tests for health endpoint)
+- [x] Integration tests with Testcontainers run successfully - ✅ Integration tests pass (database connection tests with Testcontainers)
 - [x] Playwright E2E tests configured and can run - ✅ Basic tests created and passing
 - [ ] Full stack integration verified (frontend can call backend API)
 
@@ -129,8 +129,8 @@
 ### Tests
 
 - [ ] Unit test: Angular component renders
-- [ ] Unit test: Backend health endpoint returns 200 OK
-- [ ] Integration test: Backend connects to PostgreSQL via Testcontainers
+- [x] Unit test: Backend health endpoint returns 200 OK - ✅ HealthControllerTests created and passing
+- [x] Integration test: Backend connects to PostgreSQL via Testcontainers - ✅ DatabaseConnectionTests created and passing
 - [x] E2E test: Frontend loads and displays basic content - ✅ Created and passing
 - [ ] E2E test: Frontend can call backend health endpoint
 
@@ -183,7 +183,7 @@
 
 1. Configure Playwright for frontend (1h) - ✅ Completed (browsers installed, config created)
 2. Configure xUnit and Testcontainers for backend (1h) - ✅ Completed (packages installed, test project created)
-3. Create basic test examples (1h)
+3. Create basic test examples (1h) - ✅ Completed (unit tests for health endpoint, integration tests for database connection)
 
 ### P2 - Verification (2h)
 
