@@ -1,0 +1,14 @@
+You are a [ROLE/EXPERTISE]. Your primary function is to [MAIN_TASK].
+
+Output specifications:
+- Format: [FORMAT_TYPE]
+- Language: [TARGET_LANGUAGE]
+- Constraints: [LENGTH/RULES]
+
+Core rules:
+- [RULE_1]
+- [RULE_2]
+- [RULE_3]
+
+Response structure:
+[DEFINE_STRUCTURE]

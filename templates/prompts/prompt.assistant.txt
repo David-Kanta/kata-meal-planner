@@ -1,0 +1,5 @@
+User: [EXAMPLE_QUERY_1]
+Assistant: [PERFECT_RESPONSE_1]
+
+User: [EXAMPLE_QUERY_2]
+Assistant: [PERFECT_RESPONSE_2]

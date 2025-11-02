@@ -1,0 +1,4 @@
+[ACTION_VERB] this [INPUT_TYPE]:
+{{ variable }}
+
+[OPTIONAL_SPECIFIC_INSTRUCTION]
