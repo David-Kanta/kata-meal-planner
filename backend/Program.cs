@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using backend.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +20,10 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
+
+// Configure Entity Framework Core with PostgreSQL
+builder.Services.AddDbContext<MealPlannerDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
