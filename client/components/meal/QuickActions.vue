@@ -7,22 +7,22 @@ const emit = defineEmits<{
 
 const actions = [
   {
-    icon: '🍽️',
-    label: 'Add New Meal',
+    icon: '➕',
+    label: 'Add Recipe',
     event: 'addMeal',
-    color: 'bg-primary text-white hover:bg-primary/90'
+    color: 'border-2 border-primary-light text-primary hover:bg-primary-light/10'
   },
   {
-    icon: '🔄',
-    label: 'Regenerate Week',
+    icon: '📅',
+    label: 'Create Meal Plan',
     event: 'regenerateWeek',
-    color: 'border-2 border-primary text-primary hover:bg-primary/10'
+    color: 'border-2 border-primary-light text-primary hover:bg-primary-light/10'
   },
   {
     icon: '📋',
-    label: 'View Shopping List',
+    label: 'Generate Grocery List',
     event: 'viewShoppingList',
-    color: 'border-2 border-neutral-300 text-neutral-700 hover:bg-neutral-50'
+    color: 'border-2 border-primary-light text-primary hover:bg-primary-light/10'
   }
 ]
 </script>

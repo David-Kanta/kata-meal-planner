@@ -80,13 +80,13 @@ kata-meal-planner/
 - [x] **Tâche 06** - Composables & State Management ✅
 
 ### Phase 4 : Composants
-- [ ] **Tâche 07** - Composant AppHeader
-- [ ] **Tâche 08** - Composant MealCard
-- [ ] **Tâche 09** - Composant MonthCalendar
-- [ ] **Tâche 10** - Composants Complémentaires
+- [x] **Tâche 07** - Composant AppHeader ✅
+- [x] **Tâche 08** - Composant MealCard ✅
+- [x] **Tâche 09** - Composant MonthCalendar ✅
+- [x] **Tâche 10** - Composants Complémentaires ✅
 
 ### Phase 5 : Pages
-- [ ] **Tâche 11** - Page Index (Responsive)
+- [x] **Tâche 11** - Page Index (Responsive) ✅
 
 ### Phase 6 : Tests & Validation
 - [ ] **Tâche 12** - Tests Backend
@@ -119,7 +119,7 @@ Voir le dossier [docs/issues/](docs/issues/) pour les maquettes et spécificatio
 ## 🛠️ Technologies
 
 - **Frontend**: Nuxt.js 3, Vue 3, Tailwind CSS, Pinia, TypeScript
-- **Backend**: Node.js, Express, SQLite (à venir)
+- **Backend**: Node.js, Express, SQLite
 
 ## 👥 Développement
 

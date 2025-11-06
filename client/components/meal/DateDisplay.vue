@@ -19,12 +19,9 @@ const formattedDate = computed(() => {
 </script>
 
 <template>
-  <div class="text-center py-6">
-    <p class="text-sm text-neutral-600 font-medium uppercase tracking-wide mb-1">
-      {{ dayOfWeek }}
+  <div class="text-center">
+    <p class="text-lg font-medium text-primary">
+      {{ formattedDate }}, {{ dayOfWeek }}
     </p>
-    <h1 class="text-3xl font-bold text-primary">
-      {{ formattedDate }}
-    </h1>
   </div>
 </template>

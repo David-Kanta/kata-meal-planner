@@ -14,8 +14,11 @@ const emit = defineEmits<{
 
 <template>
   <div class="space-y-6">
-    <!-- Date Display -->
-    <DateDisplay v-if="meals" :date="meals.date" />
+    <!-- Section Title: Daily Digest -->
+    <div class="text-center">
+      <h1 class="text-2xl font-bold text-neutral-900 mb-2">Daily Digest</h1>
+      <DateDisplay v-if="meals" :date="meals.date" />
+    </div>
 
     <!-- Loading State -->
     <div v-if="loading" class="flex justify-center items-center py-12">
@@ -26,7 +29,7 @@ const emit = defineEmits<{
     </div>
 
     <!-- Meal Cards -->
-    <div v-else-if="meals" class="space-y-4">
+    <div v-else-if="meals" class="space-y-3">
       <MealCard
         :meal="meals.breakfast"
         meal-type="breakfast"

@@ -77,10 +77,10 @@ const handleCook = () => {
         <div class="flex gap-3">
           <button
             @click="handleSwap"
-            class="flex-1 flex items-center justify-center gap-2 px-4 py-2 border-2 border-primary-light text-primary rounded-button hover:bg-primary-light/10 transition-colors"
+            class="flex-1 flex items-center justify-center gap-2 px-4 py-2 border-2 border-primary-light text-primary rounded-button hover:bg-primary-light/20 transition-colors"
           >
             <span>🔄</span>
-            <span class="font-medium">Swap</span>
+            <span class="font-medium">Swap Meal</span>
           </button>
 
           <button
@@ -88,7 +88,7 @@ const handleCook = () => {
             class="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors"
           >
             <span>👨‍🍳</span>
-            <span class="font-medium">Cook</span>
+            <span class="font-medium">Cook Now</span>
           </button>
         </div>
       </div>
