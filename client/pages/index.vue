@@ -134,16 +134,12 @@ const handleQuickAction = (action: string) => {
             />
           </div>
 
-          <!-- Center Column: Weekly Plan -->
-          <div class="col-span-6">
+          <!-- Right Column: Weekly Plan & Upcoming Meals -->
+          <div class="col-span-9 space-y-6">
             <WeeklyMealPlan
               :plan="weeklyPlan"
               :loading="loading"
             />
-          </div>
-
-          <!-- Right Column: Upcoming Meals -->
-          <div class="col-span-3">
             <UpcomingMeals
               :meals="upcomingMeals"
               :loading="loading"
